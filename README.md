@@ -3,10 +3,10 @@ Before running the project, please ensure that the necessary packages are instal
 
 **Steps to Run the Project**
 
-**Clone the Repository** git clone https://github.com/mdarsadreza/Student-FE.git
+1. **Clone the Repository** git clone https://github.com/mdarsadreza/Student-FE.git
 
-**Navigate to the Project Directory** cd Student-FE
+2. **Navigate to the Project Directory** cd Student-FE
 
-**Install the Required Packages** npm install
+3. **Install the Required Packages** npm install
 
-**Start the Server** npm run serve
+4. **Start the Server** npm run serve
