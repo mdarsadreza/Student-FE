@@ -39,12 +39,12 @@ const routes = [
 		},
 	},
 	{
-		path: '/contact',
-		name: 'Contact',
+		path: '/upload',
+		name: 'Upload',
 		component: () =>
-			import('../views/Contact.vue'),
+			import('../views/Upload.vue'),
 		meta: {
-			title: 'Gulf - Contact',
+			title: 'Gulf - Upload',
 		},
 	},
 ];

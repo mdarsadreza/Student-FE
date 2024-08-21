@@ -3,9 +3,7 @@ import axios from 'axios';
 
 export async function studentsFindAll() {
   try {
-    console.log("response.data.users");
     const response = await axios.get('http://localhost:9291/student/findAll');
-    console.log(response.data);
     return response.data;
   } catch (error) {
     console.error("Error fetching students:", error);
@@ -15,9 +13,7 @@ export async function studentsFindAll() {
 
 export async function studentsFindById(id) {
   try {
-    console.log("response.data.users", id);
     const response = await axios.get(`http://localhost:9291/student/${id}`);
-    console.log(response.data);
     return response.data;
   } catch (error) {
     console.error("Error fetching students:", error);
@@ -25,4 +21,13 @@ export async function studentsFindById(id) {
   }
 }
 
+export async function uploadCSVFile(data) {
+  try {
+    const response = await axios.post('http://localhost:9291/students/save-csv-file', data);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching students:", error);
+    return [];
+  }
+}
 
